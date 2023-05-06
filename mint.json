@@ -2,64 +2,129 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Streamer.bot Extensions",
   "logo": {
-    "dark": "/logo/dark.png",
-    "light": "/logo/light.png"
+    "dark": "/logo/sbextlogo.png",
+    "light": "/logo/sbextlogo.png"
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0069ED",
-    "light": "#4D9CFF",
-    "dark": "#0050B4"
+    "primary": "#BA55D3",
+    "light": "#EE82EE",
+    "dark": "#EE82EE"
   },
-  "topbarLinks": [
-    {
-      "name": "Documentation",
-      "url": "https://mintlify.com/docs"
-    }
-  ],
+  "feedback": {
+    "suggestEdit": true,
+    "raiseIssue": true
+  },
   "topbarCtaButton": {
-    "name": "Get Started",
-    "url": "https://github.com/mintlify/starter"
+    "type": "github",
+    "url": "https://github.com/Streamer-bot-Extensions/Streamer.bot-Extensions-Wiki"
   },
+  "topAnchor":
+    {
+      "name": "Extensions",
+      "icon": "gears"
+    },
   "anchors": [
     {
-      "name": "API Reference",
-      "icon": "rectangle-terminal",
-      "url": "api-reference"
+      "name": "Extension Ideas",
+      "icon": "lightbulb",
+      "url": "https://ideas.streamerbotextensions.com/"
     },
     {
-      "name": "Changelog",
-      "icon": "list",
-      "url": "https://mintlify.com"
+      "name": "Streamer.bot Wiki",
+      "icon": "wikipedia-w",
+      "url": "https://wiki.streamer.bot/"
     },
     {
-      "name": "Community",
+      "name": "OBS Websocket 5 Generator",
+      "icon": "browser",
+      "url": "https://obs-raw.streamer.bot/"
+    },
+    {
+      "name": "Discord",
       "icon": "discord",
-      "url": "https://mintlify.com/community"
+      "url": "https://discord.gg/a9ttKtkUZ7"
     }
   ],
   "navigation": [
     {
-      "group": "Home",
-      "pages": ["introduction", "features"]
+      "group": "",
+      "pages": ["home"]
     },
     {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
-    },
-    {
-      "group": "Endpoint Examples",
+      "group": "Lighting Control",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        "lighting-control/govee-lights",
+        "lighting-control/lifx-lights"
+      ]
+    },
+    {
+      "group": "Twitch",
+      "pages": [
+        "twitch/20-second-instant-replay",
+        "twitch/active-chatters-list",
+        "twitch/add-random-favorite-synth-riders",
+        "twitch/advanced-stream-markers",
+        "twitch/among-us-ban",
+        "twitch/audio-source-monitor-toggle",
+        "twitch/auto-known-bot-list",
+        "twitch/awesome-clip-shoutout",
+        "twitch/basic-commands-package",
+        "twitch/birthday-extension",
+        "twitch/bitrate-command",
+        "twitch/blacklisted-words-auto-moderation",
+        "twitch/bouncing-welcome",
+        "twitch/channel-point-kill-switch",
+        "twitch/chat-reminder",
+        "twitch/chat-request-to-play-youtube",
+        "twitch/chinese-proverbs.mdx",
+        "twitch/clip-and-post-to-chat-and-discord",
+        "twitch/clip-commands",
+        "twitch/commercial-timer",
+        "twitch/cooldown-tools",
+        "twitch/countdown-timer-in-c-sharp",
+        "twitch/custom-auto-shout-out-minimum-age-requirements",
+        {
+          "group": "Chat Games",
+          "pages": [
+            "twitch/chat-games/hangman",
+            "twitch/chat-games/magic-8-ball",
+            "twitch/chat-games/mini-game-tic-tac-toe",
+            "twitch/chat-games/random-loser-game",
+            "twitch/chat-games/random-percentage-meter",
+            "twitch/chat-games/timeout-roulette-multiplayer",
+            "twitch/chat-games/timeout-user-reward",
+            "twitch/chat-games/trap-card"
+          ]
+      },
+      {
+        "group": "Credits",
+        "pages": [
+          "twitch/credits/credits-scrolling"
+        ]
+    },
+    {
+      "group": "Giveaways",
+      "pages": [
+        "twitch/giveaways/giveaway-csharp-dateline",
+        "twitch/giveaways/giveaway-csharp",
+        "twitch/giveaways/giveaway-timed"
+      ]
+    },
+    {
+      "group": "Heat Map",
+      "pages": [
+        "twitch/heat-map/heat-map-core",
+        "twitch/heat-map/mario-clicker",
+        "twitch/heat-map/tower-block-game"
+      ]
+    }
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/SB_Extensions",
+    "github": "https://github.com/Streamer-bot-Extensions",
+    "discord": "https://discord.gg/a9ttKtkUZ7"
   }
 }

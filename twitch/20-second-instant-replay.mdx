@@ -1,0 +1,42 @@
+---
+title: 20 Second Instant Replay
+description: Create a 20 second instant replay with Streamer.bot.
+---
+*OBS WS v4.9*
+
+<Card title="Import File" icon="file-arrow-down" href="/assets/20-sec-instant-replay/files/rewind-import.sb">
+Click to Download
+</Card>
+
+# Installation
+In Streamer.bot select `Import` from the top left.
+Drag and Drop the `Import File` into the `Import String`.
+![20-sec-instant-replay.png](/assets/20-sec-instant-replay/images/20-sec-instant-replay.png)
+
+You can follow Nutty's [video](https://youtu.be/NuWKrpNCE1k) for setting up OBS at least with `Nested scenes` & `Dynamic Delay Filter`.
+Whole effect takes about `8GB of your RAM`, so be aware of that.
+
+Also, make sure to check all `Sub-Actions` that they are pointing at your OBS scenes, filters and sound files.
+<Callout type="info" emoji="ℹ️">
+I plan on making video showing how to set this up from the start to the end
+</Callout>
+
+## Resources
+<Card title="Required Assets" icon="file-arrow-down" href="/assets/20-sec-instant-replay/files/Rewind-Effect.zip" target="_blank">
+Click to Download
+</Card>
+
+# Configuration
+To get timings right with my example action use these settings for `Dynamic Delay` plugin:
+
+Settings | Data
+---:|:---:
+Duration: | `20s`
+Fast Forward: | `1000%`
+Fast Backward: | `-1000%`
+Fast Forward OBS hotkey: | `CTRL+NUM3`
+Fast Backwards OBS hotkey: | `CTRL+NUM1`
+
+# Contributors
+
+- [MarkusoOoO](https://www.twitch.tv/markusoooo)

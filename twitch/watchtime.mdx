@@ -1,0 +1,42 @@
+---
+title: Watchtime
+description: This will allow users to keep track of how much time they have spent watching the stream.
+---
+import { Callout } from 'nextra-theme-docs'
+
+
+# Import File *Streamer.bot 0.1.14+*
+[Watchtime V2.0](/assets/watchtime/files/watchtimev2.0.sb)
+
+<Callout type="warning" emoji="⚠️">
+In Streamer.bot 0.1.14 the Present Viewers Event changed to allow how often the Event is run to be changed.  Watchtime V2.0 has been updated to reflect this and there is an argument that you need to change to match the minutes set on the event.  Also a bug was addressed where parsing the watchtime would return formatted incorrectly.  The old version will no longer be supported.  Please update to this version ASAP. 
+</Callout>
+
+# Installation
+
+In Streamer.bot in select `Import` from the top left.
+Drag the `Import File` into the `Import String`.
+
+![watchtime-import.png](/assets/watchtime/images/watchtime-import.png)
+
+# Configuration
+
+**New** Set the argument `vMinutes` to reflect what you have set on the slider for the `Present Viewers Event`.
+
+Add the `Action` `Auto Add Watchtime` to the `Present Viewers Event`.
+![watchtime-present-viewers-event.png](/assets/watchtime/images/watchtime-present-viewers-event.png)
+
+If there is something tied to the event already, i.e. Flad's Point System, then add a `Subaction` `Add Action > Actions > Action` and select `Auto Add Watchtime` then hit Ok, under the `Action` associated to the `Event`.  Make sure `Run Action Immediately` is `Checked`.
+![watchtime-action-menu.png](/assets/watchtime/images/watchtime-action-menu.png)
+![watchtime-action.png](/assets/watchtime/images/watchtime-action.png)
+
+Create a `Command` called `!watchtime` set to `Exact` and tie it to the `Get Watchtime User` `Action`.
+![watchtime-present-user-command.png](/assets/watchtime/images/watchtime-present-user-command.png)
+
+<Callout type="warning" emoji="⚠️">
+This will NOT work for the `Broadcast User` and will only add `Watchtime` while the stream is live.
+</Callout>
+
+# Contributors
+
+- [GoWMan](https://www.twitch.tv/GoWMan)
